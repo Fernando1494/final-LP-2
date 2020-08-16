@@ -12,6 +12,6 @@ import java.util.List;
  *
  * @author TuNombre
  */
-public interface CRUDCurso {
+public interface CRUDMatricula {
    
 }

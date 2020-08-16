@@ -5,13 +5,18 @@
  */
 package Interfaces;
 
-import Modelo.Estudiante;
+import Modelo.Curso;
 import java.util.List;
 
 /**
  *
  * @author TuNombre
  */
-public interface CRUDMatricula {
-   
+public interface CRUDCurso {
+    public List listarcurso(); // listar
+    public Curso buscarcurso(int idcurso); // buscar
+    public boolean agregarcurso(Curso curso); // agregar
+    public boolean editarcurso(Curso curso); // editar
+    public boolean eliminarcurso(int idecurso); // eliminar
 }
+

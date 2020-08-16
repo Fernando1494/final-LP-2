@@ -57,6 +57,14 @@ public class Curso {
     public void setEstado(String Estado) {
         this.Estado = Estado;
     }
+
+    public void setCredito(String s_credito) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    public void setHoras(String s_horas) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
     
     

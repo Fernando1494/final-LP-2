@@ -18,3 +18,4 @@ public interface CRUDCarrera {
     public boolean agregarcarrera(Carrera carrera); // agregar
     public boolean editarcarrera(Carrera carrera); // editar
     public boolean eliminarcarrera(int idcarrera); // eliminar
+}

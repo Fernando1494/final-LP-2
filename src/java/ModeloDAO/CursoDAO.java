@@ -41,7 +41,7 @@ public class CursoDAO implements CRUDCurso{
     }
 
     @Override
-    public Curso buscarestudiante(int idcurso) {
+    public Curso buscarcurso(int idcurso) {
         String consulta = " select *  "
                         + " from curso  "
                         + " where idcurso = " + idcurso + " ;";
@@ -63,7 +63,7 @@ public class CursoDAO implements CRUDCurso{
     }
 
     @Override
-    public boolean agregarestudiante(Curso curso) {
+    public boolean agregarcurso(Curso curso) {
         String consulta = " insert into curso(nombre, horas, credito, estado)  "
                         + " values( "
                         + "'"+ curso.getNombre() +"', "
@@ -112,14 +112,4 @@ public class CursoDAO implements CRUDCurso{
         return false;
     }
 
-    @Override
-    public Curso buscarcurso(int idcurso) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public boolean agregarcurso(Curso curso) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-    
 }

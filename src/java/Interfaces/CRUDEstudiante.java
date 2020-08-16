@@ -12,7 +12,7 @@ import java.util.List;
  *
  * @author TuNombre
  */
-public interface CRUD {
+public interface CRUDEstudiante {
     public List listarestudiante(); // listar
     public Estudiante buscarestudiante(int idestudiante); // buscar
     public boolean agregarestudiante(Estudiante estudiante); // agregar

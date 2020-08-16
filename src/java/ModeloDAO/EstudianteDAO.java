@@ -1,15 +1,15 @@
 package ModeloDAO;
 
 import Config.bd.ConectaBd;
-import Interfaces.CRUD;
 import Modelo.Estudiante;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.List;
+import Interfaces.CRUDEstudiante;
 
-public class EstudianteDAO implements CRUD{
+public class EstudianteDAO implements CRUDEstudiante{
     ConectaBd cn = new ConectaBd();
     Connection con;
     PreparedStatement pst;

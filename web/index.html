@@ -12,12 +12,17 @@ and open the template in the editor.
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
-    <body>
-        <div class="container">
-            <a class="btn btn-success btn-lg" href="ControladorEstudiante?f_accion=listarestudiante">Listar Estudiantes</a>
-            <a class="btn btn-success btn-lg" href="ControladorCurso?f_accion=listarcurso">Listar Curso</a>
-            <a class="btn btn-success btn-lg" href="ControladorCarrera?f_accion=listarcarrera">Listar Carrera</a>
-            <a class="btn btn-success btn-lg" href="ControladorMatricula?f_accion=listarmatricula">Listar Matricula</a>
+    <body>        
+        <div class="container" align=center>
+            <a class="btn btn-success btn-lg" onclick="cargarVista('Vista Estudiante/ListarEstudiante.jsp')">Listar Estudiantes</a>
+            <a class="btn btn-success btn-lg" onclick="cargarVista('Vista Curso/ListarCurso.jsp')" >Listar Curso</a>
+            <a class="btn btn-success btn-lg" onclick="cargarVista('Vista Carrera/ListarCarrera.jsp')" >Listar Carrera</a>
+            <a class="btn btn-success btn-lg" onclick="cargarVista('Vista Matricula/ListarMatricula.jsp')" >Listar Matricula</a>
         </div>
+        <script>
+            function cargarVista(url){
+                window.location.href=url;
+            }
+        </script>      
     </body>
 </html>

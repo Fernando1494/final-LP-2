@@ -18,7 +18,7 @@ public class EstudianteDAO implements CRUDEstudiante{
 
     @Override
     public List listarestudiante() {
-        ArrayList<Estudiante> estudiantes = new ArrayList<>();
+        ArrayList<Estudiante> estudiantes = new ArrayList();
         String consulta = " select * "
                         + "from estudiante ";
         try {
@@ -117,3 +117,4 @@ public class EstudianteDAO implements CRUDEstudiante{
     }
     
 }
+

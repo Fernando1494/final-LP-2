@@ -10,10 +10,10 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>AgregarCarrera</title>
-        <link href="CSS/bootstrap.css" rel="stylesheet" type="text/css"/>
+        <link href="../CSS/bootstrap.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
-        <div class="container">
+        <div class="container" >
             <form name="AgregarCarreraForm" action="Controlador" method="get">
                 <table  class="table">
                     <thead>

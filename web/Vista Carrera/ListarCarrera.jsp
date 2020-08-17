@@ -15,12 +15,12 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Listar Carreras</title>
-        <link href="CSS/bootstrap.css" rel="stylesheet" type="text/css"/>
+        <link href="../CSS/bootstrap.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
         <div class="container">
             <h1>Listado de Carreras</h1>
-            <a class="btn btn-success" href="Controlador?f_accion=agregarcarrera01">Agregar Nueva Carrera</a>
+            <a class="btn btn-success" onclick="cargarVista('AgregarCarrera.jsp')">Agregar Nueva Carrera</a>
             <table class="table table-bordered">
                 <thead>
                     <tr>
@@ -59,6 +59,12 @@
                 </tbody>
             </table>
         </div>
+        <script>
+            function cargarVista(url){
+                window.location.href=url;
+            }
+        </script>
     </body>
 </html>
+
 

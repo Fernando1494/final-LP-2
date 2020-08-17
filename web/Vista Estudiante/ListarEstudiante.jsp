@@ -14,12 +14,12 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Listar Estudiantes</title>
-        <link href="CSS/bootstrap.css" rel="stylesheet" type="text/css"/>
+        <link href="../CSS/bootstrap.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
         <div class="container">
             <h1>Listado de Estudiantes</h1>
-            <a class="btn btn-success" href="Controlador?f_accion=agregarestudiante01">Agregar Nuevo Estudiante</a>
+            <a class="btn btn-success" onclick="cargarVista('AgregarEstudiante.jsp')">Agregar Nuevo Estudiante</a>
             <table class="table table-bordered">
                 <thead>
                     <tr>
@@ -65,5 +65,10 @@
                 </tbody>
             </table>
         </div>
+        <script>
+            function cargarVista(url){
+                window.location.href=url;
+            }
+        </script>
     </body>
 </html>

@@ -15,7 +15,7 @@ import java.util.List;
  * @author TuNombre
  */
 public interface CRUDMatricula {
-   public List listarestudiante(); // listar
+   public List listarmatricula(); // listar
     public Matricula buscarmatricula(int idestudiante); // buscar
     public boolean agregarmatricula(Matricula matricula); // agregar
     public boolean editarmatricula(Matricula matricula); // editar

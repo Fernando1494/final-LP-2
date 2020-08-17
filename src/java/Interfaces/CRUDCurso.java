@@ -17,6 +17,6 @@ public interface CRUDCurso {
     public Curso buscarcurso(int idcurso); // buscar
     public boolean agregarcurso(Curso curso); // agregar
     public boolean editarcurso(Curso curso); // editar
-    public boolean eliminarcurso(int idecurso); // eliminar
+    public boolean eliminarcurso(int idcurso); // eliminar
 }
 

@@ -16,12 +16,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-/**
- *
- * @author TuNombre
- */
 public class ControladorEstudiante extends HttpServlet {
-    String listarestudiante = "Vista/ListarEstudiante.jsp";
+    String listarestudiante = "Vista Estudiante/ListarEstudiante.jsp";
     String agregarestudiante = "Vista/AgregarEstudiante.jsp";
     String editarestudiante = "Vista/EditarEstudiante.jsp";
     Estudiante estudiante = new Estudiante();
@@ -39,7 +35,8 @@ public class ControladorEstudiante extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
-        try (PrintWriter out = response.getWriter()) {
+        try {
+            PrintWriter out = response.getWriter();
             /* TODO output your page here. You may use following sample code. */
             out.println("<!DOCTYPE html>");
             out.println("<html>");
@@ -50,6 +47,8 @@ public class ControladorEstudiante extends HttpServlet {
             out.println("<h1>Servlet Controlador at " + request.getContextPath() + "</h1>");
             out.println("</body>");
             out.println("</html>");
+        }catch(Exception e){
+            
         }
     }
 

@@ -18,7 +18,7 @@ public class CursoDAO implements CRUDCurso{
 
     @Override
     public List listarcurso() {
-        ArrayList<Curso> cursos = new ArrayList<>();
+        ArrayList<Curso> cursos = new ArrayList();
         String consulta = " select * "
                         + "from curso ";
         try {

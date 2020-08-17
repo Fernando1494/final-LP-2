@@ -19,8 +19,8 @@ public class MatriculaDAO implements CRUDMatricula{
     Matricula m = new Matricula();
 
     @Override
-    public List listarestudiante() {
-        ArrayList<Matricula> matriculas = new ArrayList<>();
+    public List listarmatricula() {
+        ArrayList<Matricula> matriculas = new ArrayList();
         String consulta = " select * "
                         + "from matricula ";
         try {

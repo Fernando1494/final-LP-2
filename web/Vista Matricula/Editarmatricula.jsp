@@ -7,14 +7,14 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Editar Matricula</title>
-        <link href="CSS/bootstrap.css" rel="stylesheet" type="text/css"/>
+        <link href="../CSS/bootstrap.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
         <div class="container">
             <%
                MatriculaDAO matriculaDAO = new MatriculaDAO();
                 int s_idmatricula = Integer.valueOf(request.getParameter("f_idestudiante"));
-                Matricula estudiante = (Matricula)MatriculaDAO.buscarmatricula(s_idmatricula);  
+                Matricula matricula = (Matricula)matriculaDAO.buscarmatricula(s_idmatricula);  
             %>
             <form name="EditarMatriculaForm" action="Controlador" method="get">
                 <table  class="table">
@@ -26,27 +26,27 @@
                     <tbody>
                         <tr>
                             <td class="text-right">Semestre</td>
-                            <td><input class="form-control" type="text" name="f_semestre" value="<% out.println(estudiante.getSemestre()); %>" maxlength="6" size="6" /></td>
+                            <td><input class="form-control" type="text" name="f_semestre" value="<% out.println(matricula.getSemestre()); %>" maxlength="6" size="6" /></td>
                         </tr>
                         <tr>
                             <td class="text-right">ciclo</td>
-                            <td><input class="form-control" type="text" name="f_ciclo" value="<% out.println(estudiante.getCiclo()); %>" maxlength="5" size="5" /></td>
+                            <td><input class="form-control" type="text" name="f_ciclo" value="<% out.println(matricula.getCiclo()); %>" maxlength="5" size="5" /></td>
                         </tr>
                         <tr>
                             <td class="text-right">Estado</td>
-                            <td><input class="form-control" type="text" name="f_estado" value="<% out.println(estudiante.getEstado()); %>" maxlength="1" size="1" /></td>
+                            <td><input class="form-control" type="text" name="f_estado" value="<% out.println(matricula.getEstado()); %>" maxlength="1" size="1" /></td>
                         </tr>
                         <tr>
                             <td class="text-right">Idcurso</td>
-                            <td><input class="form-control" type="text" name="f_idcurso" value="<% out.println(estudiante.getIdcurso()); %>" maxlength="12" size="12" /></td>
+                            <td><input class="form-control" type="text" name="f_idcurso" value="<% out.println(matricula.getIdcurso()); %>" maxlength="12" size="12" /></td>
                         </tr>
                         <tr>
                             <td class="text-right">Idestudiante</td>
-                            <td><input class="form-control" type="text" name="f_idestudiante" value="<% out.println(estudiante.getIdestudiante()); %>" maxlength="12" size="12" /></td>
+                            <td><input class="form-control" type="text" name="f_idestudiante" value="<% out.println(matricula.getIdestudiante()); %>" maxlength="12" size="12" /></td>
                         </tr>
                         <tr>
                             <td class="text-right">Idcarrera</td>
-                            <td><input class="form-control" type="text" name="f_idcarrera" value="<% out.println(estudiante.getIdcarrera()); %>" maxlength="12" size="12" /></td>
+                            <td><input class="form-control" type="text" name="f_idcarrera" value="<% out.println(matricula.getIdcarrera()); %>" maxlength="12" size="12" /></td>
                         </tr>
                         <tr>
                             <td colspan="2" class="text-center">

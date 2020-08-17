@@ -14,12 +14,12 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Listar Matricula</title>
-        <link href="CSS/bootstrap.css" rel="stylesheet" type="text/css"/>
+        <link href="../CSS/bootstrap.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
         <div class="container">
             <h1>Listado de Matriculas</h1>
-            <a class="btn btn-success" href="Controlador?f_accion=agregarmatricula01">Agregar Nueva Matricula</a>
+            <a class="btn btn-primary" onclick="cargarVista('AgregarMatricula.jsp')">Agregar Nueva Matricula</a>
             <table class="table table-bordered">
                 <thead>
                     <tr>
@@ -66,5 +66,10 @@
                 </tbody>
             </table>
         </div>
+        <script>
+            function cargarVista(url){
+                window.location.href=url;
+            }
+        </script>
     </body>
 </html>

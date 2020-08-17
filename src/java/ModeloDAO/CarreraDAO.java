@@ -18,7 +18,7 @@ public class CarreraDAO implements CRUDCarrera{
 
     @Override
     public List listarcarrera() {
-        ArrayList<Carrera> carreras = new ArrayList<>();
+        ArrayList<Carrera> carreras = new ArrayList();
         String consulta = " select * "
                         + "from carrera ";
         try {

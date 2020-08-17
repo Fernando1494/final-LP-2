@@ -38,10 +38,15 @@
                             <td class="text-right">Codigo</td>
                             <td><input class="form-control" type="text" name="f_codigo" value="" maxlength="12" size="12" /></td>
                         </tr>
+                         <tr>
+                            <td class="text-right">Direccion</td>
+                            <td><input class="form-control" type="text" name="f_direccion" value="" maxlength="30" size="30" /></td>
+                        </tr>
                         <tr>
                             <td class="text-right">Estado</td>
                             <td><input class="form-control" type="text" name="f_estado" value="" maxlength="1" size="2" /></td>
                         </tr>
+                        
                         <tr>
                             <td colspan="2" class="text-center">
                                 <input class="btn-primary" type="submit" value="Agregar Estudiante" name="agregar" />

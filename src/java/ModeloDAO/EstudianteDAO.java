@@ -32,6 +32,7 @@ public class EstudianteDAO implements CRUDEstudiante{
                 estudiante.setApellidos(rs.getString("apellidos"));
                 estudiante.setDni(rs.getString("dni"));
                 estudiante.setCodigo(rs.getString("codigo"));
+                 estudiante.setDireccion(rs.getString("direccion"));
                 estudiante.setEstado(rs.getString("estado"));
                 estudiantes.add(estudiante);
             }
@@ -56,6 +57,7 @@ public class EstudianteDAO implements CRUDEstudiante{
                 e.setApellidos(rs.getString("apellidos"));
                 e.setDni(rs.getString("dni"));
                 e.setCodigo(rs.getString("codigo"));
+                 e.setDireccion(rs.getString("direccion"));
                 e.setEstado(rs.getString("estado"));
             }
         } catch (Exception e) {
@@ -66,12 +68,13 @@ public class EstudianteDAO implements CRUDEstudiante{
 
     @Override
     public boolean agregarestudiante(Estudiante estudiante) {
-        String consulta = " insert into estudiante(nombre, apellidos, dni, codigo, estado)  "
+        String consulta = " insert into estudiante(nombre, apellidos, dni, codigo, direccion, estado)  "
                         + " values( "
                         + "'"+ estudiante.getNombre() +"', "
                         + "'"+ estudiante.getApellidos() +"', "
                         + "'"+ estudiante.getDni() +"', "
                         + "'"+ estudiante.getCodigo() +"', "
+                        + "'"+ estudiante.getDireccion() +"', "
                         + "'"+ estudiante.getEstado() +"') ";
         try {
             con = cn.getConnection();
@@ -90,6 +93,7 @@ public class EstudianteDAO implements CRUDEstudiante{
                         + " apellidos = '"+ estudiante.getApellidos() +"', "
                         + " dni = '"+ estudiante.getDni() +"', "
                         + " codigo = '"+ estudiante.getCodigo() +"', "
+                        + " direccion = '"+ estudiante.getDireccion() +"', "
                         + " estado = '"+ estudiante.getEstado() +"' "
                         + " where "
                         + " idestudiante = " + estudiante.getIdestudiante() + "; ";

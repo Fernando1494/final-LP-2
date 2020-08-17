@@ -75,11 +75,13 @@ public class ControladorEstudiante extends HttpServlet {
             String s_apellidos = request.getParameter("f_apellidos");
             String s_dni = request.getParameter("f_dni");
             String s_codigo = request.getParameter("f_codigo");
+            String s_direccion = request.getParameter("f_direccion");
             String s_estado = request.getParameter("f_estado");
             estudiante.setNombre(s_nombre);
             estudiante.setApellidos(s_apellidos);
             estudiante.setDni(s_dni);
             estudiante.setCodigo(s_codigo);
+            estudiante.setDireccion(s_direccion);
             estudiante.setEstado(s_estado);
             estudianteDAO.agregarestudiante(estudiante);
             acceso = listarestudiante;
@@ -93,6 +95,7 @@ public class ControladorEstudiante extends HttpServlet {
             String s_apellidos = request.getParameter("f_apellidos");
             String s_dni = request.getParameter("f_dni");
             String s_codigo = request.getParameter("f_codigo");
+             String s_direccion = request.getParameter("f_direccion");
             String s_estado = request.getParameter("f_estado");
             
             estudiante.setIdestudiante(s_idestudiante);            
@@ -100,6 +103,7 @@ public class ControladorEstudiante extends HttpServlet {
             estudiante.setApellidos(s_apellidos);
             estudiante.setDni(s_dni);
             estudiante.setCodigo(s_codigo);
+            estudiante.setDireccion(s_direccion);
             estudiante.setEstado(s_estado);
             estudianteDAO.editarestudiante(estudiante);
             acceso = listarestudiante;

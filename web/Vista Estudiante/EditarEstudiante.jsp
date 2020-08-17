@@ -41,6 +41,10 @@
                             <td><input class="form-control" type="text" name="f_codigo" value="<% out.println(estudiante.getCodigo()); %>" maxlength="12" size="12" /></td>
                         </tr>
                         <tr>
+                            <td class="text-right">Direccion</td>
+                            <td><input class="form-control" type="text" name="f_direccion" value="<% out.println(estudiante.getDireccion()); %>" maxlength="30" size="30" /></td>
+                        </tr>
+                        <tr>
                             <td class="text-right">Estado</td>
                             <td><input class="form-control" type="text" name="f_estado" value="<% out.println(estudiante.getEstado()); %>" maxlength="1" size="2" /></td>
                         </tr>

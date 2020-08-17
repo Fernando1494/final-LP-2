@@ -7,16 +7,17 @@ public class Estudiante {
     private String dni;
     private String codigo;
     private String estado;
-
+    private String direccion;
     public Estudiante() {
     }
 
-    public Estudiante(int idestudiante, String nombre, String apellidos, String dni, String codigo, String estado) {
+    public Estudiante(int idestudiante, String nombre, String apellidos, String dni, String codigo,String direccion, String estado) {
         this.idestudiante = idestudiante;
         this.nombre = nombre;
         this.apellidos = apellidos;
         this.dni = dni;
         this.codigo = codigo;
+        this.direccion= direccion; 
         this.estado = estado;
     }
 
@@ -67,7 +68,13 @@ public class Estudiante {
     public void setCodigo(String codigo) {
         this.codigo = codigo;
     }
-    
+    public String getDireccion() {
+        return direccion;
+    }
+
+    public void setDireccion(String codigo) {
+        this.direccion = direccion;
+    }
     
     
     
